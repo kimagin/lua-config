@@ -71,10 +71,10 @@ require("rose-pine").setup({
 
   --- @usage string hex value or named color from rosepinetheme.com/palette
   groups = {
-    background = "_experimental_nc",
-    background_nc = "_experimental_nc",
-    panel = "_experimental_nc",
-    panel_nc = "_experimental_nc",
+    background = "#191724",
+    background_nc = "#191724",
+    panel = "#191724",
+    panel_nc = "#191724",
     -- border = "darkslategray",
     border = "highlight_low",
     comment = "highlight_high",
