@@ -19,3 +19,10 @@ local function map(mode, lhs, rhs, opts)
 end
 
 map("i", "jj", "<ESC>", { desc = "Switch to normal Mode" })
+
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader>fr",
+  "<Cmd>lua require('telescope').extensions.frecency.frecency()<CR>",
+  { noremap = true, silent = true }
+)
