@@ -19,10 +19,11 @@ local function map(mode, lhs, rhs, opts)
 end
 
 map("i", "jj", "<ESC>", { desc = "Switch to normal Mode" })
+map("n", "<C-a>", "ggVG", { desc = "Switch to normal Mode" })
 
 map("n", "<leader>fs", "<cmd>:w<CR>", { desc = "Save current File" })
 map("n", "<leader>q", "<cmd>:bd<CR>", { desc = "Quit current File" })
-map("n", "<leader>Q", "<cmd>:q<CR>", { desc = "Quit current File" })
+map("n", "<leader>qq", "<cmd>:q<CR>", { desc = "Quit current File" })
 
 vim.api.nvim_set_keymap(
   "n",
