@@ -17,6 +17,12 @@ return {
         layout_config = { prompt_position = "bottom" },
         -- sorting_strategy = "ascending",
         winblend = 10,
+        file_ignore_patterns = {
+          "node_modules",
+          "build",
+          "dist",
+          "yarn.lock",
+        },
       },
     },
     dependencies = {
