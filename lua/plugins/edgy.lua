@@ -59,7 +59,7 @@ return {
         "neo-tree",
       },
       animate = {
-        enabled = true,
+        enabled = false,
         fps = 100,
         cps = 120,
         on_begin = function()
@@ -69,7 +69,7 @@ return {
           vim.g.minianimate_disable = false
         end,
       },
-      exit_when_last = true,
+      exit_when_last = false,
       keys = {
         -- increase width
         ["<c-Right>"] = function(win)
