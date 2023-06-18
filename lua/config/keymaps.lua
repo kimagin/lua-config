@@ -24,7 +24,7 @@ map("i", "jj", "<ESC>", { desc = "Switch to normal Mode" })
 -- Normal Mode
 map("n", "<C-a>", "ggVG", { desc = "Switch to normal Mode" })
 map("n", "ss", "<cmd>:w<CR>", { desc = "Save current File" })
-map("n", "<leader>qq", "<leader>bd", { desc = "Quit current File" })
+-- map("n", "<leader>qq", "<leader>bd", { desc = "Quit current File" })
 map("n", "qq", "<cmd>:wqa!<CR>", { desc = "Quit Vim" })
 
 -- Move Tabs

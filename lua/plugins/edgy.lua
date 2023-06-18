@@ -59,7 +59,7 @@ return {
         "neo-tree",
       },
       animate = {
-        enabled = false,
+        enabled = true,
         fps = 100,
         cps = 120,
         on_begin = function()
