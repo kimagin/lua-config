@@ -18,8 +18,6 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
---NOTE:This is a test
-
 --Insert Mode
 map("i", "jj", "<ESC>", { desc = "Switch to normal Mode" })
 
