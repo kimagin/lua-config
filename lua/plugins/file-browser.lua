@@ -2,7 +2,7 @@ return {
   "nvim-telescope/telescope-file-browser.nvim",
   keys = {
     {
-      "<leader>ff",
+      "<leader>fo",
       -- "<cmd>Telescope file_browser path=%:p:h=%:p:h<cr>",
       "<cmd>Telescope file_browser path=~/linux-coding-environment/Projects<cr>",
       { noremap = true },
