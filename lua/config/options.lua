@@ -8,6 +8,8 @@ vim.g.maplocalleader = " "
 
 local opt = vim.opt
 
+--TODO: Check for more information on vim options
+
 opt.pumblend = 0 -- Popup blend
 opt.termguicolors = true
 opt.background = "dark"
