@@ -8,14 +8,14 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 vim.cmd("autocmd BufNewFile,BufRead *.astro set filetype=astro")
 
 -- Edgy
-vim.opt.laststatus = 3
+vim.opt.laststatus = 5
 vim.opt.splitkeep = "screen"
 -- vim.opt.statusline = " %f %m %= %l:%c ♥ "
 -- vim.cmd([[
 --   hi Pmenu guibg=#ffffff
---   hi PmenuSel guibg=#a9c1e4
+--   hi PmenuSel guibg=#a11c1e4
 -- ]])
---
+
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
@@ -26,6 +26,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },
     { import = "lazyvim.plugins.extras.lang.tailwind" },
+    { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
     { import = "lazyvim.plugins.extras.util.project" },
     -- import/override with your plugins
     { import = "plugins" },
@@ -71,10 +72,10 @@ require("rose-pine").setup({
 
   --- @usage string hex value or named color from rosepinetheme.com/palette
   groups = {
-    background = "#191724",
-    background_nc = "#191724",
-    panel = "#191724",
-    panel_nc = "#191724",
+    background = "#191727",
+    background_nc = "#191727",
+    panel = "#191727",
+    panel_nc = "#191727",
     -- border = "darkslategray",
     border = "highlight_low",
     comment = "highlight_high",
@@ -87,12 +88,12 @@ require("rose-pine").setup({
     warn = "gold",
 
     headings = {
-      h1 = "iris",
-      h2 = "foam",
-      h3 = "rose",
-      h4 = "gold",
-      h5 = "pine",
-      h6 = "foam",
+      h4 = "iris",
+      h5 = "foam",
+      h6 = "rose",
+      h7 = "gold",
+      h8 = "pine",
+      h9 = "foam",
     },
     -- or set all headings at once
     -- headings = 'subtle'
@@ -104,8 +105,8 @@ require("rose-pine").setup({
     ColorColumn = { bg = "rose" },
 
     -- Blend colours against the "base" background
-    CursorLine = { bg = "foam", blend = 10 },
-    StatusLine = { fg = "love", bg = "love", blend = 5 },
+    CursorLine = { bg = "foam", blend = 12 },
+    StatusLine = { fg = "love", bg = "love", blend = 7 },
     StatusLineNC = { fg = "subtle", bg = "pine" },
   },
 })
