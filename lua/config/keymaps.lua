@@ -18,6 +18,8 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
+--NOTE:This is a test
+
 --Insert Mode
 map("i", "jj", "<ESC>", { desc = "Switch to normal Mode" })
 
@@ -25,7 +27,7 @@ map("i", "jj", "<ESC>", { desc = "Switch to normal Mode" })
 map("n", "<C-a>", "ggVG", { desc = "Switch to normal Mode" })
 map("n", "ss", "<cmd>:w<CR>", { desc = "Save current File" })
 map("n", "<leader>qq", "<leader>bd", { desc = "Quit current File" })
-map("n", "qq", "<cmd>:qa!<CR>", { desc = "Quit Vim" })
+map("n", "qq", "<cmd>:wqa!<CR>", { desc = "Quit Vim" })
 
 -- Move Tabs
 map("n", "<Tab>", "<cmd>:bn<CR>", { desc = "Move Tabs to right" })
