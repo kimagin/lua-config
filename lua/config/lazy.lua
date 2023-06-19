@@ -40,7 +40,7 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { "tokyonight", "habamax" } },
+  -- install = { colorscheme = { "tokyonight", "habamax" } },
   checker = { enabled = true }, -- automatically check for plugin updates
   performance = {
     rtp = {
@@ -112,3 +112,4 @@ require("rose-pine").setup({
 })
 
 vim.cmd("colorscheme rose-pine")
+-- vim.cmd([[:lua require("persistence").load({last = true})]])
