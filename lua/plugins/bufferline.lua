@@ -9,12 +9,12 @@ return {
     opts = {
       options = {
         hover = {
-          enabled = true,
+          enabled = false,
           delay = 200,
           reveal = { "close" },
         },
         indicator = {
-          icon = "  ",
+          icon = "|  ",
           style = "icon",
         },
       -- stylua: ignore
@@ -35,6 +35,7 @@ return {
             text = "Neo-tree",
             highlight = "Directory",
             text_align = "left",
+            -- separator = true,
           },
         },
       },

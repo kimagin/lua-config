@@ -59,6 +59,15 @@ require("lazy").setup({
   },
 })
 
+local bufferline = require("bufferline")
+bufferline.setup({
+  options = {
+    style_preset = bufferline.style_preset.minimal,
+    -- or you can combine these e.g.
+    separator_style = "thin",
+  },
+})
+
 require("rose-pine").setup({
   --- @usage 'auto'|'main'|'moon'|'dawn'
   variant = "main",
