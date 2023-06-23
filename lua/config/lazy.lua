@@ -6,7 +6,8 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 vim.cmd("autocmd BufNewFile,BufRead *.astro set filetype=astro")
-
+--disable registering
+vim.cmd("nnoremap q <Nop>")
 -- Edgy
 vim.opt.laststatus = 5
 vim.opt.splitkeep = "screen"
