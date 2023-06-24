@@ -13,6 +13,7 @@ return {
           disabled_filetypes = { statusline = { "dashboard", "alpha" } },
           -- component_separators = "|",
           section_separators = { left = "", right = "" },
+          always_divide_middle = true,
         },
         sections = {
           lualine_a = { "mode" },
@@ -26,9 +27,10 @@ return {
                 info = icons.diagnostics.Info,
                 hint = icons.diagnostics.Hint,
               },
+              update_in_insert = true,
             },
             { "filetype", icon_only = true, separator = "", padding = { left = 1, right = 0 } },
-            { "filename", path = 1, symbols = { modified = "  ", readonly = "", unnamed = "" } },
+            { "filename", path = 0, symbols = { modified = "  ", readonly = "", unnamed = "" } },
             -- stylua: ignore
             -- {
             --  function() return require("nvim-navic").get_location() end,
