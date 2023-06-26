@@ -121,8 +121,8 @@ require("rose-pine").setup({
   -- https://github.com/rose-pine/neovim/wiki/Recipes
   highlight_groups = {
     ColorColumn = { bg = "rose" },
-    Comment = { fg = "#404040" },
-    LineNr = { fg = "#404040" },
+    Comment = { fg = "#404044" },
+    LineNr = { fg = "#464650" },
     -- Blend colours against the "base" background
     CursorLine = { bg = "foam", blend = 10 },
     -- StatusLine = { fg = "love", bg = "iris", blend = 0 },
