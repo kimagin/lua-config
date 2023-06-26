@@ -24,19 +24,10 @@ map("i", "jj", "<ESC>", { desc = "Switch to normal Mode" })
 -- Normal Mode
 map("n", "<C-a>", "ggVG", { desc = "Switch to normal Mode" })
 map("n", "ss", "<cmd>:w<CR>", { desc = "Save current File" })
--- map("n", "<leader>qq", "<leader>bd", { desc = "Quit current File" })
--- map("n", "qq", "<cmd>:wqa!<CR>", { desc = "Quit Vim" })
 
 -- Move Tabs
 map("n", "<Tab>", "<cmd>:bn<CR>", { desc = "Move Tabs to right" })
 map("n", "<S-Tab>", "<cmd>:bp<CR>", { desc = "Move Tabs to left" })
-
-vim.api.nvim_set_keymap(
-  "n",
-  "<leader>fr",
-  "<Cmd>lua require('telescope').extensions.frecency.frecency()<CR>",
-  { noremap = true, silent = true }
-)
 
 vim.api.nvim_set_keymap("n", "<leader>q", "<Cmd>:bd<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "qq", "<Cmd>:wqa!<CR>", { noremap = true, silent = true })

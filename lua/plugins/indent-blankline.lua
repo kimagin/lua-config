@@ -7,7 +7,6 @@ return {
       char = "",
       filetype_exclude = {
         "help",
-        "astro",
         "alpha",
         "dashboard",
         "neo-tree",
