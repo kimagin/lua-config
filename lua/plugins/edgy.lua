@@ -59,11 +59,11 @@ return {
         "neo-tree",
       },
       animate = {
-        enabled = true,
+        enabled = false,
         fps = 100,
         cps = 120,
         on_begin = function()
-          vim.g.minianimate_disable = true
+          vim.g.minianimate_disable = false
         end,
         on_end = function()
           vim.g.minianimate_disable = false

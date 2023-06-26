@@ -6,5 +6,5 @@ return {
   { "echasnovski/mini.hipatterns", enabled = false },
   -- { "echasnovski/mini.indentscope", enabled = false },
   -- { "akinsho/bufferline.nvim", enabled = false },
-  { "folke/edgy.nvim", enabled = false },
+  -- { "folke/edgy.nvim", enabled = false },
 }
