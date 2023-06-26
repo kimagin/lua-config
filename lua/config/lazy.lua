@@ -29,7 +29,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
-    -- { import = "lazyvim.plugins.extras.formatting.prettier" },
+    { import = "lazyvim.plugins.extras.formatting.prettier" },
     { import = "lazyvim.plugins.extras.lang.tailwind" },
     -- { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
     -- { import = "lazyvim.plugins.extras.util.project" },
@@ -83,23 +83,22 @@ require("rose-pine").setup({
   --- @usage 'main'|'moon'|'dawn'
   dark_variant = "main",
   -- bold_vert_split = false,
-  dim_nc_background = true,
+  dim_nc_background = false,
   disable_background = false,
   disable_float_background = true,
   disable_italics = false,
 
   --- @usage string hex value or named color from rosepinetheme.com/palette
   groups = {
-    background = "#191727",
-    background_nc = "#191727",
-    panel = "#191727",
-    panel_nc = "#191727",
+    background = "#1f1f1f",
+    background_nc = "#1f1f1f",
+    panel = "#1f1f1f",
+    panel_nc = "#222222",
     -- border = "darkslategray",
-    border = "highlight_low",
+    border = "#262626",
     comment = "highlight_high",
     link = "iris",
     punctuation = "subtle",
-
     error = "love",
     hint = "iris",
     info = "foam",
@@ -123,11 +122,15 @@ require("rose-pine").setup({
     ColorColumn = { bg = "rose" },
 
     -- Blend colours against the "base" background
-    CursorLine = { bg = "foam", blend = 12 },
-    StatusLine = { fg = "love", bg = "love", blend = 7 },
+    CursorLine = { bg = "pine", blend = 25 },
+    StatusLine = { fg = "love", bg = "iris", blend = 0 },
     StatusLineNC = { fg = "subtle", bg = "pine" },
+    PmenuSel = { fg = "#f1f1f1", bg = "pine", blend = 60 },
+    Pmenu = { fg = "#e0def4", bg = "pine", blend = 25 },
+    PmenuSbar = { fg = "#e0def4", bg = "pine", blend = 25 },
+    TelescopeSelectionCaret = { fg = "love" },
+    TelescopeSelection = { fg = "#e0def4", bg = "pine", blend = 25 },
   },
 })
 
 vim.cmd("colorscheme rose-pine")
--- vim.cmd([[:lua require("persistence").load({last = true})]])
