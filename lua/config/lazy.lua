@@ -121,11 +121,12 @@ require("rose-pine").setup({
   -- https://github.com/rose-pine/neovim/wiki/Recipes
   highlight_groups = {
     ColorColumn = { bg = "rose" },
-
+    Comment = { fg = "#404040" },
+    LineNr = { fg = "#404040" },
     -- Blend colours against the "base" background
-    CursorLine = { bg = "pine", blend = 25 },
-    StatusLine = { fg = "love", bg = "iris", blend = 0 },
-    StatusLineNC = { fg = "subtle", bg = "pine" },
+    CursorLine = { bg = "foam", blend = 10 },
+    -- StatusLine = { fg = "love", bg = "iris", blend = 0 },
+    -- StatusLineNC = { fg = "subtle", bg = "pine" },
     PmenuSel = { fg = "#f1f1f1", bg = "pine", blend = 60 },
     Pmenu = { fg = "#e0def4", bg = "pine", blend = 25 },
     PmenuSbar = { fg = "#e0def4", bg = "pine", blend = 25 },
