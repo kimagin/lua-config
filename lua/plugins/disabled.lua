@@ -1,5 +1,5 @@
 return {
-  { "rcarriga/nvim-notify", enabled = false },
+  -- { "rcarriga/nvim-notify", enabled = false },
   -- { "lukas-reineke/indent-blankline.nvim", enabled = false },
   -- { "stevearc/dressing.nvim", enabled = false },
   { "folke/noice.nvim", enabled = false },
@@ -9,4 +9,6 @@ return {
   -- { "folke/edgy.nvim", enabled = false },
   -- { "L3MON4D3/LuaSnip", enabled = false },
   -- { "rafamadriz/friendly-snippets", enabled = false },
+
+  { "SmiteshP/nvim-navic", enabled = false },
 }
