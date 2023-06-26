@@ -19,4 +19,18 @@ return {
       opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "emoji" } }))
     end,
   },
+
+  --Mason
+  {
+    "neovim/nvim-lspconfig",
+    ---@class PluginLspOpts
+    opts = {
+      ---@type lspconfig.options
+      servers = {
+        -- pyright will be automatically installed with mason and loaded with lspconfig
+        astro = {},
+        tailwindcss = {},
+      },
+    },
+  },
 }

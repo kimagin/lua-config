@@ -31,3 +31,6 @@ map("n", "<S-Tab>", "<cmd>:bp<CR>", { desc = "Move Tabs to left" })
 
 vim.api.nvim_set_keymap("n", "<leader>q", "<Cmd>:bd<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "qq", "<Cmd>:wqa!<CR>", { noremap = true, silent = true })
+
+-- Telescope
+vim.api.nvim_set_keymap("n", "<leader>fp", "<Cmd>:Telescope projects<CR>", { noremap = true, silent = true })
