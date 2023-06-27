@@ -12,4 +12,5 @@ return {
 
   { "SmiteshP/nvim-navic", enabled = false },
   -- { "akinsho/toggleterm.nvim", enabled = false },
+  { "catppuccin/nvim", enabled = false },
 }
