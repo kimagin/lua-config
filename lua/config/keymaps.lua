@@ -42,6 +42,5 @@ vim.api.nvim_set_keymap("n", "<leader>q", "<Cmd>:bd<CR>", { noremap = true, sile
 vim.api.nvim_set_keymap("n", "<leader>fp", "<Cmd>:Telescope projects<CR>", { noremap = true, silent = true })
 
 -- Unregister ciw from the clipboard
-vim.api.nvim_set_keymap("i", "c", '"_c', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "c", '"_c', { noremap = true, silent = true })
-vim.api.nvim_set_keymap("v", "c", '"_c', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "d", '"_d', { noremap = true, silent = true })
