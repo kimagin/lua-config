@@ -11,4 +11,5 @@ return {
   -- { "rafamadriz/friendly-snippets", enabled = false },
 
   { "SmiteshP/nvim-navic", enabled = false },
+  -- { "akinsho/toggleterm.nvim", enabled = false },
 }
