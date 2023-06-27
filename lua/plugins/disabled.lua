@@ -6,7 +6,7 @@ return {
   { "echasnovski/mini.hipatterns", enabled = false },
   -- { "echasnovski/mini.indentscope", enabled = false },
   -- { "akinsho/bufferline.nvim", enabled = false },
-  -- { "folke/edgy.nvim", enabled = false },
+  { "folke/edgy.nvim", enabled = false },
   -- { "L3MON4D3/LuaSnip", enabled = false },
   -- { "rafamadriz/friendly-snippets", enabled = false },
 
