@@ -29,8 +29,13 @@ map("n", "ss", "<cmd>:w<CR>", { desc = "Save current File" })
 map("n", "<Tab>", "<cmd>:bn<CR>", { desc = "Move Tabs to right" })
 map("n", "<S-Tab>", "<cmd>:bp<CR>", { desc = "Move Tabs to left" })
 
+-- Save and Quit
+vim.keymap.set("n", "qq", function()
+  vim.cmd.w()
+  vim.cmd.quitall()
+end)
+
 vim.api.nvim_set_keymap("n", "<leader>q", "<Cmd>:bd<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "qq", "<Cmd>:wqa!<CR>", { noremap = true, silent = true })
 
 -- Telescope
 vim.api.nvim_set_keymap("n", "<leader>fp", "<Cmd>:Telescope projects<CR>", { noremap = true, silent = true })
