@@ -1,3 +1,3 @@
 return {
-  -- { "gregsexton/MatchTag", ft = "html" },
+  { "gregsexton/MatchTag", ft = "html" },
 }

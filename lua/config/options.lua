@@ -6,6 +6,12 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+  virtual_text = false,
+})
+
+vim.diagnostic.config({ virtual_text = false })
+
 local opt = vim.opt
 
 --TODO: Check for more information on vim options
