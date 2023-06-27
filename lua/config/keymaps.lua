@@ -26,10 +26,11 @@ map("n", "<C-a>", "ggVG", { desc = "Switch to normal Mode" })
 map("n", "ss", "<cmd>:w<CR>", { desc = "Save current File" })
 
 -- Move Tabs
-map("n", "<Tab>", "<cmd>:bn<CR>", { desc = "Move Tabs to right" })
+map("n", "<Tab>", "<cmd>:bn<CR>", { desc = "" })
+
 map("n", "<S-Tab>", "<cmd>:bp<CR>", { desc = "Move Tabs to left" })
 
--- Save and Quit
+-- Save and Quit/home/kimagin/.local/share/nvim/lazy/lualine.nvim/lua/lualine/themes/c-pine.lua
 vim.keymap.set("n", "qq", function()
   vim.cmd.w()
   vim.cmd.quitall()
@@ -39,3 +40,8 @@ vim.api.nvim_set_keymap("n", "<leader>q", "<Cmd>:bd<CR>", { noremap = true, sile
 
 -- Telescope
 vim.api.nvim_set_keymap("n", "<leader>fp", "<Cmd>:Telescope projects<CR>", { noremap = true, silent = true })
+
+-- Unregister ciw from the clipboard
+vim.api.nvim_set_keymap("i", "c", '"_c', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "c", '"_c', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "c", '"_c', { noremap = true, silent = true })
