@@ -19,6 +19,9 @@ return {
           folder_empty = "󰉖",
         },
       },
+      window = {
+        width = "28",
+      },
     },
   },
 }
