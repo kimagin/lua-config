@@ -22,6 +22,8 @@ return {
       window = {
         width = "28",
       },
+      follow_current_file = false,
+      use_libuv_file_watcher = true,
     },
   },
 }
