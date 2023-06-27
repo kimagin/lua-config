@@ -26,7 +26,7 @@ map("n", "<C-a>", "ggVG", { desc = "Switch to normal Mode" })
 map("n", "ss", "<cmd>:w<CR>", { desc = "Save current File" })
 
 -- Move Tabs
-map("n", "<Tab>", "<cmd>:bn<CR>", { desc = "" })
+map("n", "<Tab>", "<cmd>:bn<CR>", { desc = "Move Tabs to right" })
 
 map("n", "<S-Tab>", "<cmd>:bp<CR>", { desc = "Move Tabs to left" })
 
@@ -35,8 +35,6 @@ vim.keymap.set("n", "qq", function()
   vim.cmd.w()
   vim.cmd.quitall()
 end)
-
-vim.api.nvim_set_keymap("n", "<leader>q", "<Cmd>:bd<CR>", { noremap = true, silent = true })
 
 -- Telescope
 vim.api.nvim_set_keymap("n", "<leader>fp", "<Cmd>:Telescope projects<CR>", { noremap = true, silent = true })
