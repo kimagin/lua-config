@@ -7,7 +7,7 @@ return {
         open_mapping = [[<c-\>]],
         shade_terminals = true,
         shading_factor = "0",
-        direction = "vertical",
+        direction = "horizontal",
         size = function(term)
           if term.direction == "horizontal" then
             return 15
