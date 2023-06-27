@@ -19,3 +19,5 @@ local opt = vim.opt
 opt.pumblend = 0 -- Popup blend
 opt.termguicolors = true
 opt.background = "dark"
+-- Disable the ~
+opt.fillchars = { eob = " " }
